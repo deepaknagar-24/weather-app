@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Project</title>
+    <link rel="shortcut icon" href="cloud.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="search-box">
+
+             <input type="text" placeholder="Enter your location..." id="input">
+              <i class="ri-search-line" id="btn"></i>
+              
+            </div>
+
+        </div>
+
+        <div class="img-not-found-container">
+          <h1>Sorry , Location not found!!</h1>
+           <img src="/images/error.png" alt="notfound">
+        </div>
+
+        <div class="weather-body">
+
+          <img src="/images/cloud.png" alt="cloudimage" id="img">
+
+          <div class="weather-box">
+              <p id="temperature">0 <sup>°C</sup></p>
+              <p id="description">Light rain</p>
+          </div>
+
+          <div class="weather-details">
+
+              <div class="humidity">
+                  <i class="fa-sharp fa-solid fa-droplet"></i>
+                  <div class="text">
+                    <span id="humidity">0%</span>
+                    <p>Humidity</p>
+                  </div>
+              </div>
+
+              
+              <div class="wind">
+                  <i class="fa-solid fa-wind"></i>
+                  <div class="text">
+                    <span id="wind-speed">0Km/H</span>
+                    <p>wind speed</p>
+                  </div>
+              </div>
+
+          </div>
+
+        </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
